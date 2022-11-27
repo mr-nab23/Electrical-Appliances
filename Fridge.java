@@ -58,7 +58,7 @@ public class Fridge {
                             if(seconds <= 390){
                                 time.stop();
                                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                                alert.setHeaderText("Count down reset to 0!");
+                                alert.setHeaderText("It has reached the minimum limit of usage ,Power Saving is On");
                                 alert.show();
                             }
                         }
