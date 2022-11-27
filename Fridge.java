@@ -55,10 +55,11 @@ public class Fridge {
                             label.setText("Fridge : "+seconds.toString());
 
                             //setup alert when reaching < 100
-                            if(seconds <= 390){
+                            //power saving sini.
+                            if(seconds <= 100){
                                 time.stop();
                                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                                alert.setHeaderText("Count down reset to 0!");
+                                alert.setHeaderText("Power saving is on. Close Appliances.");
                                 alert.show();
                             }
                         }
