@@ -53,10 +53,10 @@ public class Television {
                             label.setText("TV : "+seconds.toString());
 
                             //setup alert when reaching < 100
-                            if(seconds <= 290){
+                            if(seconds <= 100){
                                 time.stop();
                                 Alert alert = new Alert(Alert.AlertType.WARNING);
-                                alert.setHeaderText("It has reached the minimum limit of usage");
+                                alert.setHeaderText("Power saving is on. Close Appliances.");
                                 alert.show();
                             }
                         }
