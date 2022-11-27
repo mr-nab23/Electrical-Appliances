@@ -58,7 +58,7 @@ public class Washing {
                             if(seconds <= 90){
                                 time.stop();
                                 Alert alert = new Alert(Alert.AlertType.WARNING);
-                                alert.setHeaderText("It has reached the minimum limit of usage, Power Saving is on");
+                                alert.setHeaderText("It has reached the minimum limit of usage, Power Saving is On");
                                 alert.show();
                             }
                         }
