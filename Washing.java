@@ -22,7 +22,7 @@ import javafx.util.Duration;
  * @author Nabil.s
  */
 public class Washing {
-    private final Integer startTime = 300;
+    private final Integer startTime = 100;
     private Integer seconds = startTime;
     private Label label;
     public void window() throws Exception
@@ -55,10 +55,10 @@ public class Washing {
                             label.setText("Washing Machine: "+seconds.toString());
 
                             //setup alert when reaching < 100
-                            if(seconds <= 290){
+                            if(seconds <= 90){
                                 time.stop();
                                 Alert alert = new Alert(Alert.AlertType.WARNING);
-                                alert.setHeaderText("It has reached the minimum limit of usage");
+                                alert.setHeaderText("It has reached the minimum limit of usage, Power Saving is on");
                                 alert.show();
                             }
                         }
